@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>BattleBoardGames</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Model-Battle-Board-Games\Model-Battle-Board-Games.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Models\packages.config" />
+    <Content Remove="Views\Home\Login.cshtml" />
+    <Content Remove="Views\Home\Tabuleiro.cshtml" />
+    <Content Remove="wwwroot\css\Login.css" />
+    <Content Remove="wwwroot\css\TabuleiroEstilo.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\Home\Login.cshtml" />
+    <None Include="Views\Home\Tabuleiro.cshtml" />
+    <None Include="wwwroot\css\Login.css" />
+    <None Include="wwwroot\css\TabuleiroEstilo.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\Identity\Services\" />
+  </ItemGroup>
+</Project>
